@@ -34,6 +34,7 @@ public class UserService {
         user.setPassword(dto.getPassword());
         user.setCurrentStreak(0);
         user.setTotalScore(0);
+        // AUDITORIO
 
         return userRepository.save(user);
     }
@@ -50,9 +51,6 @@ public class UserService {
         if (dto.getPassword() != null) {
             user.setPassword(dto.getPassword());
         }
-//        if (dto.getRole() != null) {
-//            user.setRole(dto.getRole());
-//        }
 
         return userRepository.save(user);
     }
