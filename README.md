@@ -77,14 +77,14 @@ Con la aplicación arrancada:
 
 ## Configuración
 
-El archivo `src/main/resources/application.properties` contiene la configuración de conexión a la base de datos:
+El archivo `src/main/resources/application.properties.example` contiene la configuración de conexión a la base de datos:
 
 ```properties
 spring.application.name=artquiz
 
 spring.datasource.url=jdbc:postgresql://localhost:5432/artquiz_db
-spring.datasource.username=Admin
-spring.datasource.password=Admin123.
+spring.datasource.username=******
+spring.datasource.password=******
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 ```
