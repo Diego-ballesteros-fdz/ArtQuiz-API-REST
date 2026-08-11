@@ -10,9 +10,9 @@ services:
           size: 134217728 # 128*2^20 bytes = 128Mb
       - postgres_data:/var/lib/postgresql/data
     environment:
-      POSTGRES_PASSWORD: Admin123.
-      POSTGRES_USER: Admin
-      POSTGRES_DB: artquiz_db
+        POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+        POSTGRES_USER: ${POSTGRES_USER}
+        POSTGRES_DB: ${POSTGRES_DB}
     ports:
       - "5432:5432"
   adminer:
