@@ -32,9 +32,7 @@ public class UserService {
         user.setEmail(dto.getEmail());
         // PENDIENTE DE SEGURIDAD: hashear con BCrypt en Fase 2
         user.setPassword(dto.getPassword());
-        user.setCurrentStreak(0);
-        user.setTotalScore(0);
-        // AUDITORIO
+        // AUDITORIA
 
         return userRepository.save(user);
     }

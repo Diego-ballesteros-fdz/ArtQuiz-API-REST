@@ -38,4 +38,7 @@ public class User extends Auditable {
 
     @Column(name = "total_score")
     private Integer totalScore = 0;
+
+    @Column(name="max-streak")
+    private Integer maxStreak=0;
 }
